@@ -12,8 +12,8 @@
 }
 
 #list {
-    list-style-type: none;
-    display: inline;
+    display: flex;
+    flex-direction: row;
     margin: auto;
     width: auto;
     height: auto;
@@ -30,7 +30,7 @@
 }
 
 .input-area {
-    display: flex;
+    display: inline;
     margin: 1%;
     align-items: center;
     justify-content: space-evenly;

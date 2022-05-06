@@ -16,20 +16,26 @@ const $input = $('#field')
 
 const addSkill = $input.val()
 
-// function will add skill from input field into newly created list under title
-
 console.log(addSkill)
 
-// function skillFunc (){
-//     $main.append($list.val(addSkill));
-// };
-
+// function will add skill from input field into newly created list under title
 
 $button.click(()=>{
-    const $newList = $('<li></li>');
-    $newList.css('list-style-type', 'none');
-    $newList.text($input.val());
-    $ul.append($newList);
+    // while ($input.val()!==''){
+    const $skill = $('<li class="skill"></li>');
+    const $close = $('<input class="close" type="button" value="X"/>')
+    $skill.css('list-style-type', 'none');
+    $skill.text($input.val());
+    $ul.append($skill);
+    $ul.append($close);
+    // }
+    $input.val('');
 });
 
 // new list will have button with function to clear skill entry
+
+// const $close = $('.close')
+// const $skill = $('.skill')
+$('input.close').click(()=>{
+    $('li.skill').remove();
+});
