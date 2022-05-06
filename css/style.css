@@ -2,6 +2,21 @@
     --main-bg-color: rgba(128, 206, 113, 0.8);
 }
 
+li {
+    display: block;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    color: gold;
+}
+
+.close {
+    align-self: flex-start;
+    display: inline-block;
+    background-color: rgba(239, 0, 0, 0.8);
+    color: white;
+    border: none;
+}
+
 #main-box {
     position: fixed;
     margin: auto;
@@ -13,7 +28,7 @@
 
 #list {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin: auto;
     width: auto;
     height: auto;
@@ -24,7 +39,8 @@
     background-color:var(--main-bg-color);
     color: white;
     margin: auto;
-    width: auto;
+    padding: px;
+    width: 60%;
     text-align: center;
     padding: initial;
 }
