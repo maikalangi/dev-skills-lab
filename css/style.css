@@ -1,0 +1,49 @@
+:root {
+    --main-bg-color: rgba(128, 206, 113, 0.8);
+}
+
+#main-box {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10%;
+    text-align: center;
+}
+
+#list {
+    list-style-type: none;
+    display: inline;
+    margin: auto;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+#title {
+    background-color:var(--main-bg-color);
+    color: white;
+    margin: auto;
+    width: auto;
+    text-align: center;
+    padding: initial;
+}
+
+.input-area {
+    display: flex;
+    margin: 1%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#field {
+    border: var(--main-bg-color) solid 5px;
+}
+
+#button {
+    border: var(--main-bg-color) solid 5px;
+    color: var(--main-bg-color);
+    background: white;
+    width: fit-content;
+    height: fit-content;
+}
